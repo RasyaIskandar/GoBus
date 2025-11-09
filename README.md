@@ -1,147 +1,83 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# GoBus
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+GoBus adalah aplikasi mobile layanan informasi jadwal bus dan rute perjalanan yang memudahkan pengguna dalam mencari transportasi umum secara cepat dan praktis. Aplikasi ini menampilkan daftar rute, detail lokasi, serta informasi transportasi terkait yang berguna bagi pengguna harian maupun perjalanan luar kota.
 
-## About Laravel
+Aplikasi ini dibangun menggunakan React Native + Expo dengan Tailwind (twrnc) untuk tampilan UI yang ringan, responsif, dan modern.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Menampilkan daftar layanan transportasi bus
+- UI sederhana dan mudah dipahami
+- Ikon visual untuk setiap kategori layanan
+- Dapat dijalankan di Android (via Expo)
+- Styling responsif menggunakan Tailwind (twrnc)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🧱 Teknologi yang Digunakan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Teknologi | Fungsi |
+|----------|--------|
+| React Native + Expo | Framework aplikasi mobile |
+| Tailwind (twrnc) | Styling UI responsif |
+| @expo/vector-icons | Ikon tampilan antarmuka |
+| Android Studio | Emulator pengujian aplikasi |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 📦 Instalasi dan Cara Menjalankan Aplikasi
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-GoBus
-Sistem pemesanan tiket bus berbasis web. User dapat memilih kelas bus, mengisi data pemesanan, menghitung biaya otomatis termasuk diskon lansia, mencetak struk, dan mengirim struk ke WhatsApp.
-
-TUJUAN
-Menyediakan proses pemesanan tiket bus yang cepat, jelas, dan mudah dipahami oleh pengguna umum.
-
-FITUR UTAMA
-
-Tampilan landing page bersih dan responsif
-
-Pemilihan kelas bus
-
-Form pemesanan dengan validasi input
-
-Perhitungan total pembayaran otomatis
-
-Diskon khusus penumpang lansia
-
-Cetak struk siap print
-
-Kirim struk langsung ke WhatsApp
-
-Tanpa sistem login agar penggunaan lebih cepat
-
-TEKNOLOGI
-Laravel
-Tailwind CSS
-MySQL
-Vite
-HTML CSS JavaScript
-
-STRUKTUR DIRECTORI PENTING
-app
-Http
-Controllers
-resources
-views
-kelas
-order
-public
-images
-
-CARA INSTALL
-
-Clone repository
-git clone https://github.com/username/GoBus.git
-
-Masuk folder
+### 1. Clone Repository
+git clone https://github.com/RasyaIskandar/GoBus.git
 cd GoBus
 
-Install dependencies
-composer install
+shell
+Salin kode
+
+### 2. Install Dependencies
 npm install
 
-Buat file .env
-cp .env.example .env
+shell
+Salin kode
 
-Atur koneksi database di .env
+### 3. Jalankan Aplikasi
+npx expo start
 
-Generate key
-php artisan key:generate
+yaml
+Salin kode
 
-Migrasi database
-php artisan migrate
+- Tekan **a** untuk membuka di Android Emulator
+- Atau scan QR di **Expo Go** pada HP
 
-Jalankan project
-npm run dev
-php artisan serve
+---
 
-CARA PAKAI
+## 🗂️ Struktur Direktori (Singkat)
 
-Buka halaman utama
-http://127.0.0.1:8000
+/app
+└── screens
+└── GoBus.js // Halaman utama GoBus
+/components // Komponen UI (jika ada)
 
-Pilih kelas bus
+yaml
+Salin kode
 
-Isi form pemesanan
+---
 
-Lihat struk dan cetak atau kirim ke WhatsApp
+## 🧑‍💻 Cara Push ke GitHub (Jika Belum Dipush)
 
-CATATAN
-Pastikan folder public/images berisi gambar kelas bus. Jika tidak, aplikasi akan memakai placeholder otomatis.
+git init
+git add .
+git commit -m "Initial GoBus mobile app"
+git branch -M main
+git remote add origin https://github.com/RasyaIskandar/GoBus.git
+git push -f origin main
 
-DEVELOPER
-Rasya Iskandar
->>>>>>> 182b916ca63140f73848ec951185d43e2410e57a
+yaml
+Salin kode
+
+---
+
+## 👤 Developer
+**Rasya Iskandar**
